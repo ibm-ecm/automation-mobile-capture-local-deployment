@@ -30,6 +30,18 @@ As new major versions of macOS are made generally available, Docker stops suppor
 #### Version
 Docker Desktop Community >= 2.1.0.1
 
+### Previously installed version of Mobile Capture
+It's important that there are no previous installed version of Mobile Capture on your local Kubernetes cluster.
+
+If possible, before installing this version, reset the cluster by:
+1. Open Docker preferences
+2. Navigate on the menu to `Kubernetes`
+3. Press `Reset Kubernetes Cluster`
+4. Wait until the status of Kubernetes is `running`.
+
+If not possible to reset the kubernetes cluster please run the included uninstall script from a terminal:
+`$ ./uninstall.sh`
+
 #### Installation
 ##### Windows
 Follow [these instructions](https://docs.docker.com/docker-for-windows/install/) to install Docker Desktop for Windows.
