@@ -4,10 +4,10 @@ images:
   rails:
     registry: ibm
     repository: mobile-capture-api
-    tag: 0a6d22f5a76d7192c9023241aa7ea9b09f5a798d
+    tag: 985a46c146dbb37da4cdeed4ea7e564ed390cbdd
     pullPolicy: Never
   react:
     registry: ibm
     repository: mobile-capture-static-file-server
-    tag: 13c7d79c44f6a4a0a6e8c097a6745ee09c809e4c
+    tag: c4397bd263e516d9877171e43588ce41d6e84a27
     pullPolicy: Never
