@@ -39,9 +39,6 @@ If possible, before installing this version, reset the cluster by:
 3. Press `Reset Kubernetes Cluster`
 4. Wait until the status of Kubernetes is `running`.
 
-If not possible to reset the kubernetes cluster please run the included uninstall script from a terminal:
-`$ ./uninstall.sh`
-
 #### Installation
 ##### Windows
 Follow [these instructions](https://docs.docker.com/docker-for-windows/install/) to install Docker Desktop for Windows.
@@ -57,14 +54,21 @@ Follow [these instructions](https://docs.docker.com/docker-for-mac/#kubernetes) 
 ## Installation of Mobile Capture Local Deployment
 1. Confirm you have Docker Desktop Community version >= 2.1.0.1
     * Installation instructions link is provided above
-2. Confirm Kubernetes cluster on Docker Desktop is enabled
+1. Confirm Kubernetes cluster on Docker Desktop is enabled
     * Instructions link is provided above
-3. Copy docker images file for Mobile Capture, named `docker-images-<number>.tar[.gz]`, to the same directory where this `README` and `install.sh` files are.
+1. Copy docker images file for Mobile Capture, named `docker-images-<number>.tar.gz`, to the same directory where this `README` and `install.sh` or `INSTALL.BAT` files are.
     * NOTE: The images file must be the one provided for this version of the script. Version mismatch will not work.
-4. Copy Mobile Capture helm chart's directory, named `mobilecapture`, to the same directory where this `README` and `install.sh` files are.
-    * NOTE: The helm chart must be the one provided for this version of the script. Version mismatch will not work.
-5. Your computer and iOS device must be connected to the same local network
-6. Run, from a terminal, the install script, named `install.sh`
-    * `$ ./install.sh`
-7. Follow on-screen instructions provided by the install script
+1. Rename the file copied on the previous point to `docker-images.tar.gz`
+1. Copy Helm Chart file for Mobile Capture, named `helm-chart-<number>.tar.gz`, to the same directory where this `README` and `install.sh` or `INSTALL.BAT` files are.
+    * NOTE: The Helm Chart file must be the one provided for this version of the script. Version mismatch will not work.
+1. Rename the file copied on the previous point to `helm-chart.tar.gz`
+1. Your computer and iOS device must be connected to the same local network
+1. Run
+    * on macOS:
+        * from a terminal, run the install script, named `install.sh` 
+        * `$ ./install.sh`
+    * on Windows:
+        * from the *Command Prompt*, run the install batch file, named `INSTALL.BAT`
+        * `C:\...\> INSTALL.BAT` 
+1. Follow on-screen instructions provided by the install script
 
